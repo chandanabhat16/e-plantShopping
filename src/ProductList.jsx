@@ -243,6 +243,7 @@ function ProductList() {
     fontSize: '30px',
     textDecoration: 'none',
    }
+   const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
    const handleCartClick = (e) => {
     e.preventDefault();
     setShowCart(true); // Set showCart to true when cart icon is clicked
