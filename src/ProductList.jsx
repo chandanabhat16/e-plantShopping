@@ -250,6 +250,12 @@ function ProductList() {
         fontSize: '30px',
         textDecoration: 'none',
     }
+    const handlePlantsClick = (e) => {
+        e.preventDefault();
+        setShowPlants(true); // Set showAboutUs to true when "About Us" link is clicked
+        setShowCart(false); // Hide the cart when navigating to About Us
+    };
+    
     const handleCartClick = (e) => {
         e.preventDefault();
         setShowCart(true);
