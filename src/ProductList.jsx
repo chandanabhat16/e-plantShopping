@@ -243,6 +243,7 @@ function ProductList() {
     fontSize: '30px',
     textDecoration: 'none',
    }
+   const cartItems = useSelector(state => state.cart.items);
    const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
    const handleCartClick = (e) => {
     e.preventDefault();
