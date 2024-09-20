@@ -6,6 +6,7 @@ import './ProductList.css';
 
 function ProductList() {
     const [showCart, setShowCart] = useState(false);
+    const [showPlants, setShowPlants] = useState(false);
     const dispatch = useDispatch();
 
     const plantsArray = [
@@ -255,7 +256,7 @@ function ProductList() {
         setShowPlants(true); // Set showAboutUs to true when "About Us" link is clicked
         setShowCart(false); // Hide the cart when navigating to About Us
     };
-    
+
     const handleCartClick = (e) => {
         e.preventDefault();
         setShowCart(true);
